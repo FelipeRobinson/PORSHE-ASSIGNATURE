@@ -1,0 +1,15 @@
+:root {
+    --cor-principal: #000;
+    --cor-secundario: grey;
+    --botão-vermelho: #a00000;
+    --branco-principal: #fff;
+}
+
+body {
+    background-color: var(--cor-principal);
+    color: var(--branco-principal);
+}
+
+section .first {
+    padding: 300%;
+}
