@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --cor-principal: #000;
     --cor-secundario: grey;
     --botão-vermelho: #a00000;
     --branco-principal: #fff;
+    --alinhamento: center;
+    --fonte: "Rubik", sans-serif;
 }
 
 body {
@@ -16,4 +20,70 @@ body {
 }
 
 .first {
+    margin: 90px;
+    margin-top: 150px;
+    display: flex;
+    text-align: var(--alinhamento);
+}
+
+.beggin h1 {
+    margin-bottom: -100px;
+    font-family: var(--fonte);
+    font-size: 20px;
+    color: #fffffff1;
+}
+
+.buttons {
+    margin-top: -100px;
+}
+
+#plano-1 {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-color: red;
+    border-radius: 20px;
+}
+
+#plano-1:hover {
+    border-color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#plano-2 {
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(180, 0, 0);
+    border-radius: 20px;
+    border: solid;
+    border-color: rgb(180, 0, 0);
+}
+
+#plano-2:hover {
+    background-color: #970000;
+    border-color: rgba(255, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h6 {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+#logo {
+    margin-top: -10px;
+}
+
+#laFerrari {
+    width: 1000px;
 }
