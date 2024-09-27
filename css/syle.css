@@ -10,6 +10,10 @@ body {
     color: var(--branco-principal);
 }
 
-section .first {
-    padding: 300%;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.first {
 }
