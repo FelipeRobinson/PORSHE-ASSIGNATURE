@@ -50,10 +50,11 @@ nav img {
     font-size: 25px;
 }
 
+
 /* BEGGIN */
 .first {
     margin: 90px;
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     text-align: var(--alinhamento);
     padding-bottom: 30px;
