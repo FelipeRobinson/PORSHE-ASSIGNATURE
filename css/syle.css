@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--botão-vermelho); /* Cor do fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Cor do polegar */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 2px solid var(--botão-vermelho); /* Espaço ao redor */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Muda a cor quando passar em cima */
+}
+
+
 /* VARIÁVEIS */
 :root {
     --cor-principal: #000;
     --cor-secundario: grey;
-    --botão-vermelho: rgba(255, 0, 0, 0.5);
+    --botão-vermelho: rgb(150, 0, 0);
     --branco-principal: #fff;
     --alinhamento: center;
     --fonte: "Rubik", sans-serif;
@@ -15,6 +35,7 @@
 body {
     background-color: var(--cor-principal);
     color: var(--branco-principal);
+    font-family: var(--fonte);
 }
 
 * {
@@ -28,12 +49,15 @@ nav {
     background-color: var(--botão-vermelho);
     width: 100%;
     height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav img {
     width: 150px;
     margin: -40px 0 0 40px;
-
 }
 
 .user {
@@ -45,7 +69,6 @@ nav img {
 }
 
 .fa-user {
-    background-color: var();
     margin: 18% 0 0 22%;
     font-size: 25px;
 }
@@ -53,14 +76,15 @@ nav img {
 
 /* BEGGIN */
 .first {
-    margin: 90px;
+    margin-right: 100px;
+    margin: 150px 100px 0 150px;
     margin-top: 150px;
     display: flex;
     text-align: var(--alinhamento);
     padding-bottom: 30px;
 }
 
-.beggin h1 {
+.first .beggin h1 {
     margin-bottom: -100px;
     font-family: var(--fonte);
     font-size: 20px;
@@ -104,14 +128,15 @@ nav img {
     color: rgb(255, 255, 255);
 }
 
-.beggin a {
+.first .beggin a {
     text-decoration: none;
     color: white;
 }
 
-.beggin h6 {
+.first .beggin h6 {
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 10px;
+    opacity: 0.5;
 }
 
 #logo {
@@ -119,12 +144,12 @@ nav img {
 }
 
 #laFerrari {
-    width: 1000px;
+    width: 900px;
 }
 
 
 /* MID */
-.second {    
+.second {   
     margin: 90px;
     margin-top: 200px;
     display: flex;
@@ -134,4 +159,92 @@ nav img {
 #itens {
     border-radius: 20px;
     width: 1000px;
+}
+
+.second .beggin {
+    display: flex;
+    align-items: center;
+}
+
+
+/* THIRTH */
+.thirth {
+    margin: 300px 100px 0 150px;
+    display: flex;
+    text-align: right;
+    padding: 0 0 0 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirth .beggin {
+    margin: -100px 0 0 0;
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo da div em coluna, h1 em cima, p embaixo */
+}
+
+.thirth .beggin h1 {
+    margin: -130px 0 0 10px; /* Ajuste o espaçamento entre o h1 e o p */
+    font-family: var(--fonte);
+    font-size: 40px;
+    color: #fffffff1;
+}
+
+.thirth .beggin p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.thirth img {
+    width: 700px;
+    margin-bottom: 300px;
+}
+
+
+/* PLANOS */
+.planos {
+        
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--botão-vermelho);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    align-items: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000; /* Fica acima de outros elementos */
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+.icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-brands{
+    padding: 0 10px 0 10px;
+    color: #000;
+    font-size: 40px;
+}
+
+.fa-brands:hover {
+    color: #555;
 }
